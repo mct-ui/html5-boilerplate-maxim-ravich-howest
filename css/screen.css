@@ -7,6 +7,24 @@
 /*---------------------------------------/*
  # GENERIC
 /*---------------------------------------*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
 /*---------------------------------------/*
  # ELEMENTS
 /*---------------------------------------*/
@@ -15,14 +33,121 @@
     ---
     Default markup for page level elements
 */
+html {
+  font-size: calc 100%;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+  color: hsl(198.0786026201, 10%, 10%);
+  scroll-behavior: smooth;
+}
+
 /*
     Customize the background color and color to match your design.
 */
+::-moz-selection {
+  background-color: black;
+  color: hotpink;
+}
+::selection {
+  background-color: black;
+  color: hotpink;
+}
+
 /*
     Elements: typography
     ---
     Default markup for typographic elements
 */
+h1 {
+  font-size: 1.8020324707rem;
+  font-weight: 700;
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.423828125rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+p,
+ol,
+ul,
+dl,
+table,
+address,
+figure {
+  margin-bottom: 1.5rem;
+}
+
+ul,
+ol {
+  padding: 0;
+  padding-left: 1rem;
+}
+
+li ul,
+li ol {
+  margin-bottom: 0;
+}
+
+blockquote {
+  font-size: 1.423828125rem;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+figcaption {
+  font-size: 0.8888888889rem;
+  line-height: 1rem;
+  margin-bottom: 0.5rem;
+  color: hsl(198.0786026201, 10%, 50%);
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: hsl(198.0786026201, 10%, 90%);
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: hsl(198.0786026201, 100%, 40%);
+  transition: all 0.1s ease-in-out;
+}
+
+a:hover {
+  color: hsl(198.0786026201, 100%, 50%);
+}
+
+a:visited {
+  color: hsl(198.0786026201, 100%, 40%);
+}
+
+a:active {
+  color: hsl(198.0786026201, 100%, 30%);
+}
+
 /*---------------------------------------/*
  # OBJECTS
 /*---------------------------------------*/
